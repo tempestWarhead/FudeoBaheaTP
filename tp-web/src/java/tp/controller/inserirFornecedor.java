@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import tp.model.domain.Fornecedor;
 import tp.model.service.IManterFornecedor;
 import tp.model.service.impl.ManterFornecedor;
-import util.db.exception.NegocioException;
-import util.db.exception.PersistenciaException;
+import tp.util.db.exception.NegocioException;
+import tp.util.db.exception.PersistenciaException;
 
 /**
  *

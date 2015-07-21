@@ -50,6 +50,7 @@
                     <label for="rs">Razão Social:</label>
                     <input type="rs" class="form-control" id="razaoSocial" name="razaoSocial" placeholder="Razão Social">
                 </div>
+                <input type="submit" value="cadastrar">
             </form>
         </div>
         
