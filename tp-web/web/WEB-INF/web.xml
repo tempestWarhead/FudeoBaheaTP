@@ -16,6 +16,14 @@
         <servlet-name>inserirFornecedor</servlet-name>
         <url-pattern>/inserirFornecedor</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletTP</servlet-name>
+        <servlet-class>tp.controller.ServletTP</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletTP</servlet-name>
+        <url-pattern>/fCadastroUsuario</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
