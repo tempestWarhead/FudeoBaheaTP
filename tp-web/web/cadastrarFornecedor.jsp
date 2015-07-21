@@ -1,17 +1,21 @@
+<%-- 
+    Document   : cadastrarFornecedor
+    Created on : 20/07/2015, 21:14:38
+    Author     : LucasCésar
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TP</title>
-        <meta charset="UTF-8">
+        <title>TP - Cadastro Fornecedor</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
+
+
     <body>
         <nav class="navbar navbar-default navbar-static-top" style="width: 100%; margin: 0px">
             <div class="container-fluid">
@@ -36,18 +40,19 @@ and open the template in the editor.
             </div><!-- /.container-fluid -->
         </nav>
 
-        <div class="col-md-12 text-center" style="padding: 40px">
-            <div class="btn-group-vertical" role="group" aria-label="...">
-                <button type="button" class="btn btn-default" onclick=" window.location='cadastrarUsuario.jsp' ">Cadastrar Usuário</button><br/>
-                <button type="button" class="btn btn-default" onclick=" window.location='cadastrarProduto.jsp' ">Cadastrar Produto</button><br/>
-
-                <button type="button" class="btn btn-default" onclick=" window.location='cadastrarFornecedor.jsp' ">Cadastrar Fornecedor</button>
-                <button type="button" class="btn btn-default" onclick=" window.location='listarFornecedor.jsp' ">Listar Fornecedores</button><br/>
-
-                <button type="button" class="btn btn-default" onclick="window.location='comprar.jsp'">Compra</button>
-            </div>
+        <div class="well" style="margin: 3% 30%">
+            <form method="POST" action="inserirFornecedor">
+                <div class="form-group">
+                    <label for="nome">Nome do fornecedor:</label>
+                    <input type="nome" class="form-control" id="nome" name="nome" placeholder="Nome do fornecedor">
+                </div>
+                <div class="form-group">
+                    <label for="rs">Razão Social:</label>
+                    <input type="rs" class="form-control" id="razaoSocial" name="razaoSocial" placeholder="Razão Social">
+                </div>
+            </form>
         </div>
-
+        
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
